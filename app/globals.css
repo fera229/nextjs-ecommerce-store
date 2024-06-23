@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body,
 html,
 div,
@@ -27,6 +31,7 @@ li {
   padding: 10px 20px;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 .links {
   margin-left: 20px;
@@ -47,8 +52,14 @@ li {
 }
 .content {
   margin-top: 60px;
-}
-.content {
   padding: 20px;
   background-color: #f4f4f4;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+main {
+  flex-grow: 1;
 }

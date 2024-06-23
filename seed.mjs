@@ -19,8 +19,14 @@ const seedProducts = async () => {
 
     for (const product of productsBooks) {
       await client.query(
-        'INSERT INTO products (name, image, price, description) VALUES ($1, $2, $3, $4)',
-        [product.name, product.image, product.price, product.description],
+        'INSERT INTO products (name, urlName, image, price, description) VALUES ($1, $2, $3, $4, $5)',
+        [
+          product.name,
+          product.urlName,
+          product.image,
+          product.price,
+          product.description,
+        ],
       );
     }
 
