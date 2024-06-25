@@ -11,11 +11,11 @@ const AddToCart = ({ product }) => {
       (item) => item.id === product.id,
     );
 
-    //  increment the quantity of the product if it was already added to cart
+    // increment the quantity of the product if it was already added to cart
     if (existingProductIndex >= 0) {
       cart[existingProductIndex].quantity += quantity;
     } else {
-      // if not add a new product with the correspondingh quantity
+      // if not, add a new product with the correspondingh quantity
       cart.push({ ...product, quantity });
     }
 

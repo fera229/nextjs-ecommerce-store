@@ -34,7 +34,7 @@ const Header = () => {
       </nav>
       <div className="flex items-center space-x-4">
         <Link href="/pages/cart" className="relative">
-          <span className="material-icons">Cart. (quantity)</span>
+          <span className="material-icons">Cart</span>
         </Link>
         <Link href="/pages/checkout" className="hover:underline">
           Checkout

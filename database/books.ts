@@ -131,10 +131,10 @@
 // Load environment variables
 import { config } from 'dotenv-safe';
 import postgres from 'postgres';
+import { sql } from './connect';
 
 config();
 
-const sql = postgres(process.env.DATABASE_URL as string);
 
 type Book = {
   id: number;

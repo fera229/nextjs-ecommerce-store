@@ -1,5 +1,5 @@
 import { getBook } from '../../../database/books';
-import AddToCart from '../../components/AddToCart';
+import AddToCart from '../../components/AddToCart.jsx';
 
 export default async function BookPage({ params }) {
   const book = await getBook(parseInt(params.productId, 10));
@@ -15,8 +15,8 @@ export default async function BookPage({ params }) {
         <img
           src={`/booksImgs/${book.urlname}.webp`}
           alt={book.name}
-          width={400}
-          height={300}
+          width={300}
+          height={200}
           className="mb-4 md:mr-6 rounded-lg shadow-lg"
         />
         <div>
